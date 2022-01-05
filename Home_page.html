@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jomhuria&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Inconsolata:wght@200&family=Jomhuria&family=Overpass:wght@300&display=swap" rel="stylesheet">
+    <title>HOME PAGE</title>
+    <style>
+        body{
+            margin: 0px;
+        }
+        #body {
+            margin: 0px;
+            height: 1620px;
+        }
+        #navid4 input{
+            width: 250px;
+            outline: none;  
+            font-size: 30px;
+            font-family: 'Jomhuria', cursive;  
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            outline: none; 
+        }
+        #topbar {
+            display: flex;
+            background-image: linear-gradient(rgb(115, 0, 126),rgb(237, 38, 255));
+            width: 100%;
+            height: 87px;
+            position: fixed;
+            z-index: 2;
+            align-items: center;
+            justify-content: center;
+            box-shadow:0px 12px 25px 3px black;
+        }
+        .heading{
+            height: 68px;
+            width: 300px;
+            color: white;
+            font-size: 90px;
+            font-family: 'Jomhuria', cursive;
+        }
+        .headnav {
+            display: flex;
+            background-color: white;
+            height: 44px;
+            justify-content: space-evenly;
+            align-items: center;
+            position: relative;
+            top: 91px;
+            z-index: 2;
+            box-shadow:0px 12px 25px 3px black;
+        }
+        .navclass a{
+            text-decoration: none;
+            color: rgb(115, 0, 126);
+            font-family: 'Jomhuria', cursive;
+            font-size: 35px;
+        }
+        .navclass a:hover{
+            color: rgb(241, 81, 255);
+        }
+        #firstimage {
+            height: 540px;
+            background-image: url(img/intro-1573836407.jpg);
+            background-repeat: no-repeat;
+            background-size: 100vw;
+            position: relative;
+            top: 91px;
+        }
+
+        #aboutusbody{
+            height: 300px;
+            background-image: linear-gradient(rgb(122, 0, 192), rgb(53, 0, 102), rgb(31,0,49));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            top: 91px;
+            z-index: 3;
+            box-shadow:0px -7px 47px 24px black;
+        }
+        #aboutus{
+            color: white;
+            height: 200px;
+            width: 900px;
+            font-size: 23px;
+            text-align: center;
+            font-family: 'Overpass', sans-serif;
+        }
+
+        .aboutusbutton button{
+            margin-top: 33px;
+            height: 45px;
+            width: 140px;
+            border: none;
+            transition-duration: 0.4s;
+            transition-property: all;
+            font-family: 'Dela Gothic One', cursive;
+            color: rgb(41, 41, 41);
+        }
+        .aboutusbutton button:hover{
+            transition-duration: 0.4s;
+            background-color: rgb(190, 161, 218);
+            color: white;
+            cursor: pointer;
+        }
+        .offerbox{
+            background-color: rgb(250, 0, 42);
+            height: 200px;
+            width: 200px;
+            font-size: 33px;
+            color: aliceblue;
+            text-align: center;
+            box-shadow: 0px 0px 47px 15px black;
+            transition-duration: 0.3s;
+            font-family: 'Inconsolata', monospace;
+        }
+        .offerbox:hover{
+            color: rgb(20, 20, 20);
+            background-color: rgb(255, 205, 205);
+            transition-duration: 0.3s;
+            box-shadow: 0px 0px 0px 0px black;
+            cursor: pointer;
+        }
+        #offers{
+            background-image: url(pinkimage.webp);
+            position: relative;
+            display: flex;
+            top: 91px;
+            height: 450px;
+            align-items: center;
+            justify-content: center;
+            justify-content: space-evenly;
+            box-shadow: 0px 0px 29px 6px black;
+            z-index: 1;
+        }
+        .offerhead{
+            position: absolute;
+            top: 12px;
+            font-size: 50px;
+            transition-duration: 0.2s;
+            font-family: 'Inconsolata', monospace;
+            color: rgb(230, 230, 230);
+            text-shadow: 3px 3px 6px black;
+        }
+        .offerhead:hover{
+            font-size: 52px;
+            transition-duration: 0.2s;
+        }
+        #disclaimer{
+            display: flex;
+            position: relative;
+            top: 91px;
+            background-color: rgb(255, 254, 249);
+            height: 155px;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="body">
+        <div id="topbar">
+            <div class="heading">FOODELICIOUS</div>
+        </div>
+        <div class="headnav">
+            <div class="navclass" id="navid1"> <a href="Deliverypage.html"> Delivery </a> </div>
+            <div class="navclass" id="navid2"> <a href="takeaway.html"> Take Away </a> </div>
+            <div class="navclass" id="navid3"> <a href="ordernow.html"> Order-Now </a> </div>
+            <div class="navclass" id="navid4"> <input type="text" name="" id="" placeholder="Search"> </div>
+            <div class="navclass" id="navid5"> <a href="location.html"> Set Your Location </a> </div>
+        </div>
+        <div id="firstimage">
+
+        </div>
+        <div id="aboutusbody">
+            <div id="aboutus">
+                FOODELICIOUS IS ON OF THE BEST FOOD ORDERING WEBSITES. OUR CUSTOMERS' EXPERIENCE IS OUTMOST PRIORITY FOR
+                US.
+                APART FROM SERVING THE BEST QUALITY DELICIOUS FOOD, WE BELIEVE IN MAKING WITH OUR CUSTOMERS TOO.
+                ORDER YOUR FAVOURITE MEAL FROM FOODELICIOUS!
+                <div class="aboutusbutton">
+                    <button>ABOUT US</button>
+                </div>
+            </div>
+        </div>
+        <div id="offers">
+            <nav class="offerhead"> <strong>OFFERS</strong></nav>
+            <div class="offerbox" id="offerid1">10 PCS HOT WINGS @ $20</div>
+            <div class="offerbox" id="offerid2">FREE CHICKEN GINGER WORTH $30</div>
+            <div class="offerbox" id="offerid3">2 PCS HOT AND CRISPY MASALA PIZZA AT $15</div>
+            <div class="offerbox" id="offerid4">FREE COCA-COLA WITH CHEESE PIZZA </div>
+        </div>
+        <div id="disclaimer">
+            The above product shown are for illustration purpose only. Actual product may vary from the image shown in the website.
+            Our menu prices are inclusive of GST. All the products contain Monosodium Glutamate. Not recommended for children aged
+            below 12 months.
+        </div>
+    </div>
+</body>
+
+</html>
